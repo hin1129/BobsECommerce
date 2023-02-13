@@ -1,57 +1,52 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 /* TOP SECTION */
 .top {
   background-color: peachpuff;
   color: white;
-  height: 300px;
+  height: auto;
   width: 100%;
-  text-align: center;
-  background-image: url("./images/background.jpeg");
+  background-image: url("./images/background1.jpeg");
   background-size: cover;
 }
-header {
+
+.header {
   display: flex;
+  align-items: center;
+  flex: 2;
   justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-.logo {
-  float: left;
-  margin-top: 25px;
-  margin-right: 100px;
-}
 .nav {
-  padding: 10px;
   border: 1px solid black;
-  display: block;
-  margin-top: 25px;
-  background-color: aqua;
-
-  /* height: 50px;
-  margin-top: 25px;
-  margin-bottom: 50px;
-  margin-left: 100px; */
+  background-color: #e5e7eb;
+  height: 70px;
+  padding: 5px 10px;
 }
-nav {
-  font-size: 20px;
-  margin-bottom: 50px;
+ul {
+  margin: 0;
+  padding: 0;
 }
-nav > a {
-  margin: 20px;
-  color: white;
+.nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 a:hover {
   background-color: green;
   color: white;
 }
-.section {
-  grid-column: 2/4;
-  grid-row: 2/3;
-}
-.bottom {
+
+.title {
+  text-align: center;
 }
 
 .brandLogo {
@@ -62,18 +57,19 @@ a:hover {
 /* BOTTOM SECTION */
 
 .bottom {
-  margin-top: 50px;
+  margin: 50px 50px 50px 0;
   display: flex;
   padding: 20px;
   justify-content: center;
+  align-items: center;
 }
 .article {
   width: 50%;
 }
 
 .carousel {
-  width: 300px;
   height: 300px;
+  width: 300px;
 }
 
 .carousel-control-prev:hover,
